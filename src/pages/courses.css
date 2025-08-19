@@ -60,3 +60,47 @@
   left: 0;
   color: #007BFF;
 }
+
+/* Courses CTA Section */
+.courses-cta {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 20px;
+  margin-top: 3rem;
+}
+
+.courses-cta h3 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.courses-cta p {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.courses-cta .cta-button {
+  background: linear-gradient(135deg, #003366, #00509e);
+  color: white;
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.courses-cta .cta-button:hover {
+  background: linear-gradient(135deg, #002244, #003d7a);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 51, 102, 0.3);
+}

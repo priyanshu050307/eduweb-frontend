@@ -1,6 +1,8 @@
 // File: Home.jsx
-import React from 'react';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles.css';
+import RegistrationModal from '../components/RegistrationModal';
 
 const testimonials = [
   { name: 'Anjali Sharma', quote: 'Thanks to EduClasses, I cracked NEET in my first attempt!' },
@@ -8,6 +10,11 @@ const testimonials = [
 ];
 
 const Home = () => {
+  const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
+  const navigate = useNavigate();
+  const openRegistrationModal = () => setIsRegistrationModalOpen(true);
+  const closeRegistrationModal = () => setIsRegistrationModalOpen(false);
+
   return (
     <div className="page-container">
       {/* 1. Hero Section */}
@@ -16,7 +23,7 @@ const Home = () => {
     <div class="hero-text">
       <h1>Empower Your Future</h1>
       <p>Learn, grow, and showcase your talent through our vibrant community.</p>
-      <button class="cta-button">Explore Courses</button>
+      <button className="cta-button" onClick={() => navigate('/courses')}>Explore Courses</button>
     </div>
     <div class="hero-image">
       <img src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-cartoon-happy-school-boy-waving-hand-png-image_4691658.png" alt="Hero Image"/>
@@ -195,7 +202,7 @@ const Home = () => {
       {/* 7. Call-to-Action Banner */}
       <section className="cta-banner">
         <h3>Get Started with a Free Trial Batch</h3>
-        <button className="cta-button">Register Now</button>
+        <button className="cta-button" onClick={openRegistrationModal}>Register Now</button>
       </section>
 
       {/* 8. FAQ Section */}
@@ -219,6 +226,12 @@ const Home = () => {
         <p>© 2025 EduClasses. All Rights Reserved.</p>
         <p>Follow us on <a href="#">Instagram</a> | <a href="#">YouTube</a></p>
       </footer>
+
+      {/* Registration Modal */}
+      <RegistrationModal 
+        isOpen={isRegistrationModalOpen} 
+        onClose={closeRegistrationModal} 
+      />
     </div>
   );
 };
