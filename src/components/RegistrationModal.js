@@ -21,7 +21,8 @@ const RegistrationModal = ({ isOpen, onClose }) => {
     setSubmitStatus(null);
 
     try {
-      // const res = await axios.post('https://eduweb-backend.onrender.com/api/contact', form);
+      const res = await axios.post('https://eduweb-backend.onrender.com/api/contact', form);
+      console.log(res);
       setSubmitStatus({ type: 'success', message: 'Registration request sent successfully! We will contact you soon.' });
       setTimeout(() => {
         onClose();
