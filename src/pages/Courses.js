@@ -16,6 +16,7 @@ const courses = [
     desc: 'Targeted preparation for Science, Commerce, and Humanities.',
   },
 ];
+console.log(courses);
 
 const Courses = () => {
   const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);

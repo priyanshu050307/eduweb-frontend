@@ -26,7 +26,7 @@ const Home = () => {
       <button className="cta-button" onClick={() => navigate('/courses')}>Explore Courses</button>
     </div>
     <div class="hero-image">
-      <img src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-cartoon-happy-school-boy-waving-hand-png-image_4691658.png" alt="Hero Image"/>
+      <img src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-cartoon-happy-school-boy-waving-hand-png-image_4691658.png" alt=""/>
     </div>
   </div>
 </section>
@@ -37,7 +37,7 @@ const Home = () => {
   <h2 class="section-heading">Why Choose Us?</h2>
   <div class="features-grid">
     <div class="feature-card">
-      <img src="https://img.icons8.com/fluency/96/classroom.png" alt="Live Classes" />
+      <img src="https://img.icons8.com/fluency/96/classroom.png" alt="" />
       <h3>Live Interactive Classes</h3>
       <p>Engage with top educators in real-time to clarify doubts instantly.</p>
     </div>
@@ -224,7 +224,7 @@ const Home = () => {
       {/* 10. Footer */}
       <footer className="footer">
         <p>© 2025 EduClasses. All Rights Reserved.</p>
-        <p>Follow us on <a href="#">Instagram</a> | <a href="#">YouTube</a></p>
+        <p>Follow us on <a href="https://www.instagram.com/">Instagram</a> | <a href="https://www.youtube.com/">YouTube</a></p>
       </footer>
 
       {/* Registration Modal */}
