@@ -17,7 +17,11 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://eduweb-backend.onrender.com/api/contact', form);
+      const res = await axios.post('https://eduweb-backend.onrender.com/api/contact', form,{
+         headers: {
+      "Content-Type": "application/json",
+    }
+      });
       alert(res.data.message);
       setForm({ name: '', email: '', phone: '', message: '' });
     } catch (err) {
