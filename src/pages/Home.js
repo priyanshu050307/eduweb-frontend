@@ -4,11 +4,11 @@ import { useNavigate } from 'react-router-dom';
 import '../styles.css';
 import RegistrationModal from '../components/RegistrationModal';
 
-// const testimonials = [
-//   { name: 'Anjali Sharma', quote: 'Thanks to EduClasses, I cracked NEET in my first attempt!' },
-//   { name: 'Rohit Verma', quote: 'Their JEE mock tests were super accurate and helpful.' },
-// ];
-
+const testimonials = [
+  { name: 'Anjali Sharma', quote: 'Thanks to EduClasses, I cracked NEET in my first attempt!' },
+  { name: 'Rohit Verma', quote: 'Their JEE mock tests were super accurate and helpful.' },
+];
+console.log(testimonials);
 const Home = () => {
   const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
   const navigate = useNavigate();
