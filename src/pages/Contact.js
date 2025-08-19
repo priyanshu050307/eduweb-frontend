@@ -8,7 +8,7 @@ const Contact = () => {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [isRegistrationModalOpen, setIsRegistrationModalOpen] = useState(false);
 
-  const openRegistrationModal = () => setIsRegistrationModalOpen(true);
+  // const openRegistrationModal = () => setIsRegistrationModalOpen(true);
   const closeRegistrationModal = () => setIsRegistrationModalOpen(false);
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
