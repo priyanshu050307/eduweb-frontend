@@ -17,7 +17,7 @@
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const res = await axios.post('https://eduweb-backend-1.onrender.com/contact', form);
+        const res = await axios.post('https://eduweb-backend-1.onrender.com/api/contact', form);
         alert(res.data.message);
         setForm({ name: '', email: '', phone: '', message: '' });
       } catch (err) {
